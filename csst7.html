@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a31d5e;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+      
+        .inner-container {
+            
+            width: 500px;
+            background: #5a032b;
+            padding:270px ;
+            border-radius: 5px;
+            
+        }
+
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        p {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select {
+            height: 40px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .gender-p {
+            margin-right: 10px;
+        }
+
+        .form-group:last-child {
+            margin-bottom: 0;
+        }
+        div{
+            color: #fff;
+        }
+
+        .submit-btn {
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            padding: 10px 20px;
+            width:520px;
+            font: bold
+            
+            
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="inner-container">
+        
+        <form action="#" method="post">
+            <div class="form-group">
+                <p for="name">Name:<input type="text" placeholder="your name" required></p>
+                
+            </div>
+            <div class="form-group">
+                <p for="email">Email:<input type="email" placeholder="your email" required></p>
+                
+            </div>
+            <div class="form-group">
+                <p for="password">Password:<input type="password" id="password" name="password" required></p>
+                
+            </div>
+            <div class="form-group">
+                <p for="phone">Phone Number:<input type="tel" id="phone" name="phone" required></p>
+                
+            </div>
+            <div class="form-group">
+                <p>Gender:<p class="gender-p"><input type="radio" name="gender" value="male" required> Male</p>
+                <p class="gender-p"><input type="radio" name="gender" value="female" required> Female</p></p>
+                
+            </div>
+            <div class="form-group">
+                <p for="language">Language:</p>
+                <select id="language" name="language" required>
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                    <option value="german">German</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p for="zipcode">Zip Code:<input type="text" id="zipcode" name="zipcode" required></p>
+                
+            </div>
+            <div class="form-group">
+                <p for="about">About:<textarea placeholder="Write about yourself"></textarea></p>
+                
+            </div>
+            <div class="form-group">
+                <input type="submit" class="submit-btn" value="Register">
+            </div>
+        </form>
+    </div>
+        
+</body>
+</html>
+                
